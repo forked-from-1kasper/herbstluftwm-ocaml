@@ -57,6 +57,7 @@ let rec showCmd : cmd -> string = function
   | Set (key, value) -> Printf.sprintf "set %s %s" key (showAttr value)
   | Attr (key, value) -> Printf.sprintf "attr %s %s" key (showAttr value)
   | Focus dir -> Printf.sprintf "focus %s" (showDir dir)
+  | Shift dir -> Printf.sprintf "shift %s" (showDir dir)
   | Split (align, None) -> Printf.sprintf "split %s" (showAlign align)
   | Split (align, Some frac) -> Printf.sprintf "split %s %f" (showAlign align) frac
   | Resize (dir, delta) -> Printf.sprintf "resize %s %+f" (showDir dir) delta 

@@ -25,6 +25,12 @@ let keybindings = [
   ([modkey], "Down"), Focus D;
   ([modkey], "Up"), Focus U;
 
+  (* moving clients *)
+  ([Control], "Left"), Shift L;
+  ([Control], "Right"), Shift R;
+  ([Control], "Down"), Shift D;
+  ([Control], "Up"), Shift U;
+
   (* resizing frames *)
   ([modkey; Control], "Left"), Resize (L, resizestep);
   ([modkey; Control], "Right"), Resize (R, resizestep);

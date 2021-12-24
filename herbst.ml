@@ -37,6 +37,7 @@ type cmd =
   | Set of string * attr
   | Attr of string * attr
   | Focus of dir
+  | Shift of dir
   | Split of align * float option
   | Resize of dir * float
   | Floating of mode
