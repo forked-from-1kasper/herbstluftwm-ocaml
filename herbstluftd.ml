@@ -2,9 +2,6 @@ open Prelude
 open Herbst
 open Decode
 
-let (>>) f g x = g (f x)
-let (<<) f g x = f (g x)
-
 let modkey = Super
 let terminal = "uxterm"
 let resizestep = 0.05
