@@ -16,6 +16,7 @@ let attr (key, value) = Attr (key, value)
 
 let keybindings = [
   ([modkey], "Return"), Spawn terminal;
+  ([modkey], "r"), Spawn "/usr/bin/dmenu_run";
   ([modkey; Control], "q"), Quit;
   (* basic movement *)
 
@@ -43,7 +44,7 @@ let keybindings = [
   ([modkey; Control], "space"), Split (Explode, Some 0.5);
 
   (* layouting *)
-  ([modkey], "r"), Remove;
+  ([modkey; Shift], "r"), Remove;
   ([modkey], "s"), Floating Toggle;
   ([modkey], "f"), Fullscreen Toggle;
   ([modkey], "p"), Pseudotile Toggle;
