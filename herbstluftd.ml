@@ -55,8 +55,8 @@ let keybindings = [
 
 let mousebindings = [
   ([modkey], Button1), Move;
-  ([modkey], Button2), Zoom;
-  ([modkey], Button3), Resize
+  ([modkey; Shift], Button1), Zoom;
+  ([modkey; Control], Button1), Resize
 ]
 
 let theme = [

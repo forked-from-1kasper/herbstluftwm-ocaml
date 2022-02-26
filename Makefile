@@ -1,5 +1,5 @@
 all:
-	ocamlbuild herbstluftd.native
+	ocamlbuild herbstluftd.native battery.native
 
 clean:
 	ocamlbuild -clean
